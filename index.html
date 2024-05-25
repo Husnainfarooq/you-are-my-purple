@@ -5,13 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>You Are My Purple</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+
+  
 </head>
-<!--  
- 
-  CSS Blossoming Flowers at Magical Night.
-  I've taken some inspiration by Yup Nguyen's Artwork: https://dribbble.com/shots/11096994-Virtual-Garden.
-  Made with Pure CSS & ♥
--->
 
 <body class="not-loaded">
   <div class="night"></div>
@@ -312,15 +308,20 @@
     </div>
   </div>
 
-  <script type="text/javascript">
+  <script>
     
     onload = () => {
-      const c = setTimeout(() => {
-        document.body.classList.remove("not-loaded");
-        clearTimeout(c);
-      }, 1000);
-    };
+  const c = setTimeout(() => {
+    console.log("Before removing 'not-loaded'");
+    document.body.classList.remove("not-loaded");
+    console.log("After removing 'not-loaded'");
+    clearTimeout(c);
+  }, 1000);
+};
+
 
   </script>
 </body>
+
+
 </html>
